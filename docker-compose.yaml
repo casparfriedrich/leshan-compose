@@ -4,7 +4,7 @@ services:
   leshan-server-demo:
     build: .
     ports:
-      - "5683:5683"
-      - "5684:5684"
-      - "8888:8888"
-    command: "java -jar leshan-server-demo.jar --webport 8888"
+      - "5683:5683/udp"
+      - "5684:5684/udp"
+      - "8888:8080"
+    command: "java -jar leshan-server-demo.jar"
