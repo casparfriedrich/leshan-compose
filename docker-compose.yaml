@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  leshan:
+    build: .
+    ports:
+      - "5683:5683"
+      - "5684:5684"
+      - "8080:8080"
+    command: "java -jar leshan-server-demo.jar"
