@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  leshan-demo-server:
+  leshan-server-demo:
     build: .
     ports:
       - "5683:5683"
